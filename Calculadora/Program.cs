@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 Console.WriteLine("\n Ingrese un número:");
 string? n1 = Console.ReadLine();
 
@@ -35,4 +34,23 @@ if (result1)
 else
 {
     Console.WriteLine("Número ingresado no valido");
+}
+
+Console.WriteLine("\n\t-----Maximos y minimos-----");
+Console.WriteLine("\nIngrese dos números");
+Console.WriteLine("\n Primer número:");
+string? numero1 = Console.ReadLine();
+Console.WriteLine("\n Segundo número:");
+string? numero2 = Console.ReadLine();
+
+bool resultado = double.TryParse(numero1, out double numer1);
+bool resultado2 = double.TryParse(numero2, out double numer2);
+
+if (resultado && resultado2)
+{
+    double max = Math.Max(numer1, numer2);
+    double min = Math.Min(numer1, numer2);
+
+    Console.WriteLine("\n El maximo es: " + max);
+    Console.WriteLine("\n El minimo es: " + min);
 }
