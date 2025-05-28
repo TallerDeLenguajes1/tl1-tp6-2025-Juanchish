@@ -34,19 +34,19 @@ do
             switch (opcion)
             {
                 case 1:
-                    resultadoOperacion += num1 + num2;
+                    resultadoOperacion = num1 + num2;
                     Console.WriteLine("\n Operacion realizada: " + num1 + " + " + num2);
                     break;
                 case 2:
-                    resultadoOperacion += num1 - num2;
+                    resultadoOperacion = num1 - num2;
                     Console.WriteLine("\n Operacion realizada: " + num1 + " - " + num2);
                     break;
                 case 3:
-                    resultadoOperacion += num1 * num2;
+                    resultadoOperacion = num1 * num2;
                     Console.WriteLine("\n Operacion realizada: " + num1 + " * " + num2);
                     break;
                 case 4:
-                    resultadoOperacion += num1 / num2;
+                    resultadoOperacion = num1 / num2;
                     Console.WriteLine("\n Operacion realizada: " + num1 + " / " + num2);
                     break;
 
